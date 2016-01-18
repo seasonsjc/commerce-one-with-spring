@@ -1,21 +1,20 @@
 package com.commerceone.catalog.controller;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.commerceone.catalog.Catalog;
 
-@Controller
+@RestController
 public class CatalogController {
 	
 	
 	@RequestMapping(name="/catalog/publish",method=RequestMethod.GET)
-	public String publish(@RequestParam Catalog catalog  ) { 
+	public Catalog publish(@RequestBody Catalog catalog  ) { 
 		System.out.println(catalog);
-		return "publish";
+		return catalog;
 	}
 
 }
