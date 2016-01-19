@@ -17,22 +17,23 @@ public class CatalogController {
 	
 
 	
-	@RequestMapping(name="/catalog/new",method=RequestMethod.GET)
+	@RequestMapping(value="/catalog/new",method=RequestMethod.GET)
 	public String addForm() {
 		return "/catalog/new";
 	}
 
-	@RequestMapping(name="/catalog/add",method=RequestMethod.POST)
+	
+	@RequestMapping(value="/catalog/add",method=RequestMethod.POST)
 	public String add(Catalog catalog) {
-		return "redirect:/catalog/list";
+		return "/catalog/add";
 	}
 	
-	@RequestMapping(name="/catalog/publish",method=RequestMethod.GET)
+	@RequestMapping(value="/catalog/list",method=RequestMethod.GET)
 	public String list() {
-		return "/catalog/list";
+		return "list";
 	}
 	
-	@RequestMapping(name="/catalog/publish",method=RequestMethod.GET)
+	@RequestMapping(value="/catalog/publish",method=RequestMethod.GET)
 	public ModelAndView publish(@RequestBody Catalog catalog  ) { 
 		System.out.println(catalog);
 		
