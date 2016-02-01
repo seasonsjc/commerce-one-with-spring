@@ -1,61 +1,82 @@
 package com.commerceone.identity;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.TemporalType;
+import javax.persistence.Temporal;
 
 @Entity
 public class User implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(name="NAME",length=300, nullable=false)
+
+	@Column(name = "NAME", length = 300, nullable = false)
 	private String name;
 
-	@Embedded 
+	@Embedded
 	private Login login;
-	
-	
+
+	@Enumerated(EnumType.STRING)
+	private ProfileType profile;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdDate;
+
 	public User() {
 	}
-
 
 	public Long getId() {
 		return id;
 	}
 
-
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 
 	public String getName() {
 		return name;
 	}
 
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 
 	public Login getLogin() {
 		return login;
 	}
 
-
 	public void setLogin(Login login) {
 		this.login = login;
 	}
 
+	public ProfileType getProfile() {
+		return profile;
+	}
+
+	public void setProfile(ProfileType profile) {
+		this.profile = profile;
+	}
+
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
 
 	@Override
 	public int hashCode() {
@@ -64,7 +85,6 @@ public class User implements Serializable {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -83,7 +103,6 @@ public class User implements Serializable {
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -91,5 +110,5 @@ public class User implements Serializable {
 				.append("]");
 		return builder.toString();
 	}
-	
+
 }
