@@ -16,9 +16,9 @@ public class Customer implements Serializable {
 	
 	private String name;
 	
-	private Address shipping;
+	//private Address shipping;
 	
-	private Address billing;
+	//private Address billing;
 
 	public Long getId() {
 		return id;
@@ -36,6 +36,7 @@ public class Customer implements Serializable {
 		this.name = name;
 	}
 
+	/*
 	public Address getShipping() {
 		return shipping;
 	}
@@ -50,7 +51,7 @@ public class Customer implements Serializable {
 
 	public void setBilling(Address billing) {
 		this.billing = billing;
-	}
+	}*/
 
 	@Override
 	public int hashCode() {
@@ -80,8 +81,8 @@ public class Customer implements Serializable {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Customer [id=").append(id).append(", name=").append(name).append(", shipping=").append(shipping)
-				.append(", billing=").append(billing).append("]");
+		builder.append("Customer [id=").append(id).append(", name=")
+			.append(name).append("]");
 		return builder.toString();
 	}
 
