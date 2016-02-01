@@ -2,6 +2,9 @@ package com.commerceone.account;
 
 import java.io.Serializable;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Address implements Serializable {
 
 	private String address;
