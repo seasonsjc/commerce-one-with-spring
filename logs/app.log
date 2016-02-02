@@ -1,0 +1,288 @@
+01/02/2016 21:38:44.327 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/02/2016 21:38:44.378 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 21:38:44.379 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 21:38:44.380 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 21:38:44.622 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+01/02/2016 21:38:44.979 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+01/02/2016 21:38:44.990 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+01/02/2016 21:38:44.995 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/02/2016 21:38:46.002 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+01/02/2016 21:38:46.173 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/02/2016 21:38:46.260 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+01/02/2016 21:38:46.261 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+01/02/2016 21:38:46.262 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+01/02/2016 21:38:46.268 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
+01/02/2016 21:38:46.906 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/02/2016 21:38:47.839 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+01/02/2016 21:38:48.237 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+01/02/2016 21:38:50.456 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+01/02/2016 21:38:50.457 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+01/02/2016 21:38:50.464 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+01/02/2016 21:38:50.492 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Customer
+01/02/2016 21:38:50.498 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order
+01/02/2016 21:38:50.502 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: OrderItem
+01/02/2016 21:38:50.504 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order_OrderItem
+01/02/2016 21:38:50.506 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+01/02/2016 21:38:50.577 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.tb_catalog
+01/02/2016 21:38:50.578 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, type]
+01/02/2016 21:38:50.578 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 21:38:50.579 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 21:38:50.582 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: User
+01/02/2016 21:38:50.584 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Customer
+01/02/2016 21:38:50.587 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order
+01/02/2016 21:38:50.589 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: OrderItem
+01/02/2016 21:38:50.591 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order_OrderItem
+01/02/2016 21:38:50.594 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+01/02/2016 21:38:50.596 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: User
+01/02/2016 21:38:50.598 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Customer
+01/02/2016 21:38:50.601 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order
+01/02/2016 21:38:50.604 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: OrderItem
+01/02/2016 21:38:50.607 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order_OrderItem
+01/02/2016 21:38:50.610 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+01/02/2016 21:38:50.612 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: User
+01/02/2016 21:38:50.635 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: create table Order (id bigint not null auto_increment, createdDate datetime, customer_id bigint, supplier_id bigint, primary key (id))
+01/02/2016 21:38:50.635 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order (id bigint not null auto_increment, createdDate datetime, customer_id bigi' at line 1
+01/02/2016 21:38:51.310 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: alter table Order add constraint FK_hj5qkmvpwdd3kon1i19im6dd9 foreign key (customer_id) references Customer (id)
+01/02/2016 21:38:51.311 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order add constraint FK_hj5qkmvpwdd3kon1i19im6dd9 foreign key (customer_id) refe' at line 1
+01/02/2016 21:38:51.312 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: alter table Order add constraint FK_e2521ssw13v4jhtobr61m08pi foreign key (supplier_id) references Supplier (id)
+01/02/2016 21:38:51.313 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order add constraint FK_e2521ssw13v4jhtobr61m08pi foreign key (supplier_id) refe' at line 1
+01/02/2016 21:38:51.314 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: alter table OrderItem add constraint FK_6cxptya5vldowhtfdxs70ytw1 foreign key (order_id) references Order (id)
+01/02/2016 21:38:51.315 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order (id)' at line 1
+01/02/2016 21:38:51.398 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: alter table Order_OrderItem add constraint FK_n39wanw1x74fnlb0gkxbjm96b foreign key (Order_id) references Order (id)
+01/02/2016 21:38:51.398 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order (id)' at line 1
+01/02/2016 21:38:51.399 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+01/02/2016 21:50:02.334 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/02/2016 21:50:02.383 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 21:50:02.384 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 21:50:02.385 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 21:50:02.610 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+01/02/2016 21:50:02.966 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+01/02/2016 21:50:02.977 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+01/02/2016 21:50:02.982 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/02/2016 21:50:03.993 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+01/02/2016 21:50:04.160 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/02/2016 21:50:04.246 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+01/02/2016 21:50:04.247 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+01/02/2016 21:50:04.248 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+01/02/2016 21:50:04.253 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
+01/02/2016 21:50:04.890 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/02/2016 21:50:05.789 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+01/02/2016 21:50:06.014 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+01/02/2016 21:50:07.838 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+01/02/2016 21:50:07.838 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+01/02/2016 21:50:07.846 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+01/02/2016 21:50:07.855 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Customer
+01/02/2016 21:50:07.859 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order
+01/02/2016 21:50:07.862 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: OrderItem
+01/02/2016 21:50:07.864 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+01/02/2016 21:50:07.867 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: TB_CATALOG
+01/02/2016 21:50:07.872 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: User
+01/02/2016 21:50:07.874 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Customer
+01/02/2016 21:50:07.877 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order
+01/02/2016 21:50:07.879 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: OrderItem
+01/02/2016 21:50:07.881 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+01/02/2016 21:50:07.883 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: TB_CATALOG
+01/02/2016 21:50:07.885 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: User
+01/02/2016 21:50:07.887 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Customer
+01/02/2016 21:50:07.890 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Order
+01/02/2016 21:50:07.893 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: OrderItem
+01/02/2016 21:50:07.896 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+01/02/2016 21:50:07.898 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: TB_CATALOG
+01/02/2016 21:50:07.900 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: User
+01/02/2016 21:50:07.982 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: create table Order (id bigint not null auto_increment, createdDate datetime, CUSTOMER_ID bigint, SUPPLIER_ID bigint, primary key (id))
+01/02/2016 21:50:07.982 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order (id bigint not null auto_increment, createdDate datetime, CUSTOMER_ID bigi' at line 1
+01/02/2016 21:50:08.077 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: alter table Order add constraint FK_hccp4149iypa1f7fp0ouiykw foreign key (CUSTOMER_ID) references Customer (id)
+01/02/2016 21:50:08.078 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order add constraint FK_hccp4149iypa1f7fp0ouiykw foreign key (CUSTOMER_ID) refer' at line 1
+01/02/2016 21:50:08.079 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: alter table Order add constraint FK_il4cbo6d1orxqge08hp45cv9 foreign key (SUPPLIER_ID) references Supplier (id)
+01/02/2016 21:50:08.080 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order add constraint FK_il4cbo6d1orxqge08hp45cv9 foreign key (SUPPLIER_ID) refer' at line 1
+01/02/2016 21:50:08.081 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000388: Unsuccessful: alter table OrderItem add constraint FK_6cxptya5vldowhtfdxs70ytw1 foreign key (order_id) references Order (id)
+01/02/2016 21:50:08.082 [ERROR][org.hibernate.tool.hbm2ddl.SchemaUpdate] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Order (id)' at line 1
+01/02/2016 21:50:08.082 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+01/02/2016 22:00:40.753 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/02/2016 22:00:40.802 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:00:40.803 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:00:40.804 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:00:41.031 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+01/02/2016 22:00:41.394 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+01/02/2016 22:00:41.405 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+01/02/2016 22:00:41.410 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/02/2016 22:00:42.422 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+01/02/2016 22:00:42.590 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/02/2016 22:00:42.674 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+01/02/2016 22:00:42.676 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+01/02/2016 22:00:42.677 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+01/02/2016 22:00:42.683 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
+01/02/2016 22:00:43.318 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/02/2016 22:00:44.220 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+01/02/2016 22:00:44.445 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+01/02/2016 22:00:46.277 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+01/02/2016 22:00:46.278 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+01/02/2016 22:00:46.285 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+01/02/2016 22:00:46.294 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: CUSTOMERS
+01/02/2016 22:00:46.298 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: ORDERS
+01/02/2016 22:00:46.372 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.orderitem
+01/02/2016 22:00:46.373 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [id, order_id]
+01/02/2016 22:00:46.374 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:00:46.374 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:00:46.377 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: SUPPLIERS
+01/02/2016 22:00:46.413 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.tb_catalog
+01/02/2016 22:00:46.414 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, type]
+01/02/2016 22:00:46.415 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:00:46.415 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:00:46.418 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: USERS
+01/02/2016 22:00:46.421 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: CUSTOMERS
+01/02/2016 22:00:46.423 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: ORDERS
+01/02/2016 22:00:46.425 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: SUPPLIERS
+01/02/2016 22:00:46.428 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: USERS
+01/02/2016 22:00:46.430 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: CUSTOMERS
+01/02/2016 22:00:46.433 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: ORDERS
+01/02/2016 22:00:46.437 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: SUPPLIERS
+01/02/2016 22:00:46.439 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: USERS
+01/02/2016 22:00:47.663 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+01/02/2016 22:30:36.806 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/02/2016 22:30:36.855 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:30:36.856 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:30:36.857 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:30:37.084 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+01/02/2016 22:30:37.444 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+01/02/2016 22:30:37.455 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+01/02/2016 22:30:37.460 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/02/2016 22:30:38.479 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+01/02/2016 22:30:38.645 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/02/2016 22:30:38.729 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+01/02/2016 22:30:38.730 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+01/02/2016 22:30:38.731 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+01/02/2016 22:30:38.737 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
+01/02/2016 22:30:39.378 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/02/2016 22:30:40.270 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+01/02/2016 22:30:40.492 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+01/02/2016 22:30:42.345 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+01/02/2016 22:30:42.346 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+01/02/2016 22:30:42.353 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+01/02/2016 22:30:42.435 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.customers
+01/02/2016 22:30:42.436 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+01/02/2016 22:30:42.437 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:30:42.437 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:30:42.502 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.orders
+01/02/2016 22:30:42.503 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, id, customer_id, supplier_id]
+01/02/2016 22:30:42.504 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_c8mh4axrd7uaq9rp7x34nnc23]
+01/02/2016 22:30:42.504 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_c8mh4axrd7uaq9rp7x34nnc23, primary]
+01/02/2016 22:30:42.561 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.orderitem
+01/02/2016 22:30:42.562 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [id, order_id]
+01/02/2016 22:30:42.562 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_6cxptya5vldowhtfdxs70ytw1]
+01/02/2016 22:30:42.563 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_6cxptya5vldowhtfdxs70ytw1, primary]
+01/02/2016 22:30:42.609 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.suppliers
+01/02/2016 22:30:42.610 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+01/02/2016 22:30:42.610 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:30:42.611 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:30:42.659 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.tb_catalog
+01/02/2016 22:30:42.660 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, type]
+01/02/2016 22:30:42.660 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:30:42.661 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:30:42.710 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.users
+01/02/2016 22:30:42.711 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, profile, passoword, name, id, username]
+01/02/2016 22:30:42.712 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:30:42.712 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:30:42.716 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+01/02/2016 22:36:36.513 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/02/2016 22:36:36.545 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:36:36.546 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:36:36.546 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:36:36.658 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+01/02/2016 22:36:36.763 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+01/02/2016 22:36:36.765 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+01/02/2016 22:36:36.767 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/02/2016 22:36:37.042 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+01/02/2016 22:36:37.085 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/02/2016 22:36:37.119 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+01/02/2016 22:36:37.120 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+01/02/2016 22:36:37.120 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+01/02/2016 22:36:37.122 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
+01/02/2016 22:36:37.426 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/02/2016 22:36:37.660 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+01/02/2016 22:36:37.714 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+01/02/2016 22:36:38.275 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+01/02/2016 22:36:38.275 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+01/02/2016 22:36:38.277 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+01/02/2016 22:36:38.319 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.customers
+01/02/2016 22:36:38.319 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+01/02/2016 22:36:38.319 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:36:38.319 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:36:38.343 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.orders
+01/02/2016 22:36:38.343 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, id, customer_id, supplier_id]
+01/02/2016 22:36:38.343 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_c8mh4axrd7uaq9rp7x34nnc23]
+01/02/2016 22:36:38.344 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_c8mh4axrd7uaq9rp7x34nnc23, primary]
+01/02/2016 22:36:38.372 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.orderitem
+01/02/2016 22:36:38.373 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [id, order_id]
+01/02/2016 22:36:38.373 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_6cxptya5vldowhtfdxs70ytw1]
+01/02/2016 22:36:38.373 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_6cxptya5vldowhtfdxs70ytw1, primary]
+01/02/2016 22:36:38.407 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.suppliers
+01/02/2016 22:36:38.407 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+01/02/2016 22:36:38.407 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:36:38.407 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:36:38.435 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.tb_catalog
+01/02/2016 22:36:38.435 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, type]
+01/02/2016 22:36:38.436 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:36:38.436 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:36:38.467 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.users
+01/02/2016 22:36:38.467 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, profile, passoword, name, id, username]
+01/02/2016 22:36:38.467 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:36:38.468 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:36:38.469 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+01/02/2016 22:43:20.247 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/02/2016 22:43:20.280 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:43:20.280 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:43:20.280 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+01/02/2016 22:43:20.399 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+01/02/2016 22:43:20.511 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+01/02/2016 22:43:20.514 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+01/02/2016 22:43:20.515 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/02/2016 22:43:20.794 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+01/02/2016 22:43:20.838 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/02/2016 22:43:20.872 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+01/02/2016 22:43:20.872 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+01/02/2016 22:43:20.873 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+01/02/2016 22:43:20.874 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
+01/02/2016 22:43:21.182 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/02/2016 22:43:21.409 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+01/02/2016 22:43:21.463 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+01/02/2016 22:43:22.020 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+01/02/2016 22:43:22.021 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+01/02/2016 22:43:22.023 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+01/02/2016 22:43:22.062 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.customers
+01/02/2016 22:43:22.062 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+01/02/2016 22:43:22.062 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:43:22.063 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:43:22.096 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.orders
+01/02/2016 22:43:22.096 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, id, customer_id, supplier_id]
+01/02/2016 22:43:22.096 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_c8mh4axrd7uaq9rp7x34nnc23]
+01/02/2016 22:43:22.096 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_c8mh4axrd7uaq9rp7x34nnc23, primary]
+01/02/2016 22:43:22.128 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.orderitem
+01/02/2016 22:43:22.128 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [id, order_id]
+01/02/2016 22:43:22.129 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_6cxptya5vldowhtfdxs70ytw1]
+01/02/2016 22:43:22.129 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_6cxptya5vldowhtfdxs70ytw1, primary]
+01/02/2016 22:43:22.148 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.suppliers
+01/02/2016 22:43:22.148 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+01/02/2016 22:43:22.148 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:43:22.148 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:43:22.166 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.tb_catalog
+01/02/2016 22:43:22.166 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, type]
+01/02/2016 22:43:22.166 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:43:22.166 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:43:22.188 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.users
+01/02/2016 22:43:22.188 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, profile, passoword, name, id, username]
+01/02/2016 22:43:22.188 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+01/02/2016 22:43:22.188 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+01/02/2016 22:43:22.190 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete

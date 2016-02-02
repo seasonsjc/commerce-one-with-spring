@@ -17,10 +17,12 @@ public class OrderRepositoryIntegratedTest {
 		OrderRepository repository = new OrderRepository();
 		
 		Customer customer = new Customer();
-		customer.setName("CUSTOMER NAME");
+		customer.setId(1L);
+		customer.setName("CUSTOMER NAME2");
 		
 		Supplier supplier = new Supplier();
-		supplier.setName("SUPPLIER NAME");
+		supplier.setId(1L);
+		supplier.setName("SUPPLIER NAME2");
 		
 		Order order = new Order ();
 		

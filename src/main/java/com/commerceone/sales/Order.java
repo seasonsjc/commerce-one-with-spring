@@ -3,6 +3,7 @@ package com.commerceone.sales;
 import javax.persistence.ManyToOne;
 
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 import java.util.List;
 
@@ -18,12 +19,17 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.GenerationType;
+import javax.persistence.Embedded;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 
 @Entity
+@Table(name="ORDERS")
 public class Order implements Serializable {
 
 	
@@ -31,16 +37,20 @@ public class Order implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@ManyToOne
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="SUPPLIER_ID"
+			,foreignKey=@ForeignKey(name="FK_ORDER_SUPPLIERS"))
 	private Supplier supplier;
+	
 
-	@ManyToOne
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="CUSTOMER_ID")
 	private Customer customer;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdDate;
 	
-	@OneToMany
+	@OneToMany(mappedBy="order",cascade=CascadeType.ALL)
 	private List<OrderItem> items;
 	
 	public Order() {
