@@ -212,7 +212,7 @@
 			<artifactId>derbyclient</artifactId>
 			<version>10.10.1.1</version>
 		</dependency>
-		
+
 		<!-- MySQL Database Driver -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -318,6 +318,18 @@
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>javax.faces-api</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>2.1.29-05</version>
 		</dependency>
 
 		<dependency>
