@@ -1,5 +1,6 @@
 package com.commerceone.catalog;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,7 @@ public class CatalogRepositoryTest {
 	
 	@Test
 	public void createNewCatalogSuccessfully () {
+		
 		
 		Catalog catalog = new Catalog();
 		catalog.setName("TV");

@@ -15,7 +15,7 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	
-	<!-- REST -->
+	<!-- REST
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -27,8 +27,21 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/</url-pattern>	
 	</servlet-mapping>
+	 -->
+	
+	<servlet>
+		<servlet-name>jsf</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jsf</servlet-name>
+		<url-pattern>/faces/*</url-pattern>
+		<url-pattern>*.jsf</url-pattern>
+	</servlet-mapping>
+	
   
   
   <welcome-file-list>
