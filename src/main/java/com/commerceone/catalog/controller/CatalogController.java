@@ -15,8 +15,6 @@ import com.commerceone.catalog.Catalog;
 @Controller
 public class CatalogController {
 	
-
-	
 	@RequestMapping(value="/catalog/new",method=RequestMethod.GET)
 	public String addForm() {
 		return "/catalog/new";

@@ -49,7 +49,6 @@ public class CrunchifyTailFile {
 		
 		 LineNumberReader reader  = new LineNumberReader(new FileReader(file));
 		 String lineRead = null;
-		 reader.
 		 reader.skip(1000000l);
 		 while ((lineRead = reader.readLine()) != null) {
 			 System.out.println(lineRead);

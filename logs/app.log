@@ -286,3 +286,30 @@
 01/02/2016 22:43:22.188 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
 01/02/2016 22:43:22.188 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
 01/02/2016 22:43:22.190 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+10/02/2016 21:49:07.333 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+10/02/2016 21:49:07.421 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10/02/2016 21:49:07.421 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10/02/2016 21:49:07.421 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10/02/2016 21:49:07.596 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+10/02/2016 21:49:07.664 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+10/02/2016 21:49:07.665 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+10/02/2016 21:49:07.667 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+10/02/2016 21:49:07.855 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10/02/2016 21:49:07.880 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+10/02/2016 21:49:07.912 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+10/02/2016 21:49:07.912 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+10/02/2016 21:49:07.912 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+10/02/2016 21:49:07.914 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
+10/02/2016 21:49:08.176 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10/02/2016 21:49:08.177 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10/02/2016 21:49:08.177 [WARN][org.hibernate.ejb.HibernatePersistence] HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10/02/2016 21:49:08.192 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+10/02/2016 21:49:08.204 [WARN][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+10/02/2016 21:49:08.205 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/commerceone]
+10/02/2016 21:49:08.205 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****}
+10/02/2016 21:49:08.205 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
+10/02/2016 21:49:08.205 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
