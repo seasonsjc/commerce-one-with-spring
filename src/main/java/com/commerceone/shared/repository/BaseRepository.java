@@ -10,6 +10,7 @@ public abstract class BaseRepository<Entity extends Serializable
 									, Id extends Serializable> {
 	
 	private EntityManagerFactory emf;
+	
 	private Class<Entity> clazz;
 	
 	public BaseRepository(Class<Entity> clazz) {
@@ -40,6 +41,8 @@ public abstract class BaseRepository<Entity extends Serializable
 	}
 	
 	
-	
+	public void setEmf(EntityManagerFactory emf) {
+		this.emf = emf;
+	}
 
 }

@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import com.commerceone.catalog.Product;
 
 @ManagedBean
+@ViewScoped
 public class SearchController {
 
 	private static final Logger logger = Logger.getLogger(SearchController.class);
@@ -35,6 +36,7 @@ public class SearchController {
 		logger.debug(product);
 		
 	}
+	
 	
 	
 	private void loadItems () {

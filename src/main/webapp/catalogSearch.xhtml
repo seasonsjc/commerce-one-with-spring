@@ -19,7 +19,10 @@
 				<h:outputLabel value="#{product.price}"/>
 				<h:outputLabel value="#{product.description}"/>
 				
-				<p:commandLink ajax="" />
+				<p:commandLink styleClass="" 
+					action="#{searchController.addToShoppingCart(product)}"
+								value="add"
+								 />
 			</p:panel>
 		</p:dataGrid>
 		
