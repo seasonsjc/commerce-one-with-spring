@@ -19,7 +19,7 @@
 				<h:outputLabel value="#{product.price}"/>
 				<h:outputLabel value="#{product.description}"/>
 				
-				<p:commandLink styleClass="" 
+				<p:commandLink update=""
 					action="#{searchController.addToShoppingCart(product)}"
 								value="add"
 								 />
@@ -30,4 +30,5 @@
 
 
 </h:body>
+
 </html>
