@@ -7,6 +7,7 @@ import javax.persistence.PersistenceException;
 import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.commerceone.shared.repository.BaseRepository;
@@ -26,7 +27,7 @@ public class OrderRepository {
 		logger.debug(".............. OrderRepository Created");
 	}
 
-	@Transactional
+	@Transactional()
 	public void create(Order order) {
 		em.persist(order);
 	}
