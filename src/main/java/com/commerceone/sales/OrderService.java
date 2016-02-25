@@ -8,12 +8,15 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.commerceone.billing.BillingService;
+
 @Service
 public class OrderService {
 
-
-	
 	private static Logger logger = Logger.getLogger(OrderService.class);  
+	
+	@Autowired
+	private BillingService billingService;
 	
 	@Autowired
 	private OrderRepository repository;

@@ -27,6 +27,8 @@ public class RootAggregate implements Serializable {
 		
 	
 	public RootAggregate() {	
+		createdDate = new Date();
+		lastModifiedDate = new Date();		
 	}
 	
 	public Long getId() {
