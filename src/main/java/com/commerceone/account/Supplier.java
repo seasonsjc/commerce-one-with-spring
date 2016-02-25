@@ -21,6 +21,13 @@ public class Supplier implements Serializable {
 	public Supplier() {
 	}
 	
+	public Supplier(String name) {
+		super();
+		this.name = name;
+	}
+
+
+
 	public Long getId() {
 		return id;
 	}

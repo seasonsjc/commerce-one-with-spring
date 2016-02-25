@@ -18,6 +18,15 @@ public class Customer implements Serializable {
 	
 	private String name;
 	
+	public Customer() {
+	}	
+	
+	public Customer(String name) {
+		this.name = name;
+	}
+
+
+
 	//private Address shipping;
 	
 	//private Address billing;

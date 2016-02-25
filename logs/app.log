@@ -644,3 +644,143 @@
 10/02/2016 21:49:08.205 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: false
 10/02/2016 21:49:08.205 [INFO][org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20 (min=1)
 >>>>>>> 21b1fb18b439ea44b0a82b0c7d4187995b5b7d0b
+24/02/2016 22:56:42.618 [INFO][org.springframework.test.context.support.DefaultTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+24/02/2016 22:56:42.698 [INFO][org.springframework.test.context.support.DefaultTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7dc7cbad, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@d2cc05a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4f933fd1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@548a9f61, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1753acfe]
+24/02/2016 22:56:42.940 [INFO][org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [application-context.xml]
+24/02/2016 22:56:43.645 [INFO][org.springframework.context.support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@239963d8: startup date [Wed Feb 24 22:56:43 BRT 2016]; root of context hierarchy
+24/02/2016 22:56:44.415 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+24/02/2016 22:56:44.539 [INFO][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'commerceOnePU'
+24/02/2016 22:56:44.629 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+24/02/2016 22:56:44.704 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+24/02/2016 22:56:44.707 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+24/02/2016 22:56:44.709 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+24/02/2016 22:56:44.964 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+24/02/2016 22:56:45.829 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+24/02/2016 22:56:46.083 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+24/02/2016 22:56:46.154 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+24/02/2016 22:56:46.602 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+24/02/2016 22:56:46.603 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+24/02/2016 22:56:46.606 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+24/02/2016 22:56:46.624 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Billing
+24/02/2016 22:56:46.656 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.CUSTOMERS
+24/02/2016 22:56:46.656 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+24/02/2016 22:56:46.657 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 22:56:46.657 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 22:56:46.658 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: EventLog
+24/02/2016 22:56:46.659 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: MailBox
+24/02/2016 22:56:46.681 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.ORDERS
+24/02/2016 22:56:46.681 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, id, customer_id, supplier_id]
+24/02/2016 22:56:46.681 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_order_suppliers]
+24/02/2016 22:56:46.681 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_order_suppliers, primary]
+24/02/2016 22:56:46.702 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.OrderItem
+24/02/2016 22:56:46.702 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [id, order_id]
+24/02/2016 22:56:46.702 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_6cxptya5vldowhtfdxs70ytw1]
+24/02/2016 22:56:46.703 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_6cxptya5vldowhtfdxs70ytw1, primary]
+24/02/2016 22:56:46.704 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Queue
+24/02/2016 22:56:46.727 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.SUPPLIERS
+24/02/2016 22:56:46.728 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+24/02/2016 22:56:46.728 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 22:56:46.728 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 22:56:46.732 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.TB_CATALOG
+24/02/2016 22:56:46.732 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, type]
+24/02/2016 22:56:46.732 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 22:56:46.732 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 22:56:46.736 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.USERS
+24/02/2016 22:56:46.737 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, profile, passoword, name, id, username]
+24/02/2016 22:56:46.737 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 22:56:46.737 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 22:56:46.738 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Billing
+24/02/2016 22:56:46.738 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: EventLog
+24/02/2016 22:56:46.739 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: MailBox
+24/02/2016 22:56:46.739 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Queue
+24/02/2016 22:56:46.740 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Billing
+24/02/2016 22:56:46.740 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: EventLog
+24/02/2016 22:56:46.741 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: MailBox
+24/02/2016 22:56:46.742 [INFO][java.sql.DatabaseMetaData] HHH000262: Table not found: Queue
+24/02/2016 22:56:48.104 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+24/02/2016 22:56:48.378 [DEBUG][com.commerceone.sales.OrderService] .... Created OrderService and repository is null
+24/02/2016 22:56:48.394 [DEBUG][com.commerceone.sales.OrderService] .... OrderService Initialized and repository is com.commerceone.sales.OrderRepository@7123be6c
+24/02/2016 22:56:48.662 [INFO][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+24/02/2016 22:56:48.672 [INFO][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+24/02/2016 22:56:48.694 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/publish],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.commerceone.catalog.controller.CatalogController.publish(com.commerceone.catalog.Catalog)
+24/02/2016 22:56:48.694 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/new],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.commerceone.catalog.controller.CatalogController.addForm()
+24/02/2016 22:56:48.695 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.commerceone.catalog.controller.CatalogController.add(com.commerceone.catalog.Catalog)
+24/02/2016 22:56:48.695 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.commerceone.catalog.controller.CatalogController.list()
+24/02/2016 22:56:49.230 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@239963d8: startup date [Wed Feb 24 22:56:43 BRT 2016]; root of context hierarchy
+24/02/2016 22:56:49.264 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@239963d8: startup date [Wed Feb 24 22:56:43 BRT 2016]; root of context hierarchy
+24/02/2016 22:56:49.307 [INFO][org.springframework.context.support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@239963d8: startup date [Wed Feb 24 22:56:43 BRT 2016]; root of context hierarchy
+24/02/2016 22:56:49.315 [INFO][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'commerceOnePU'
+24/02/2016 23:02:13.197 [INFO][org.springframework.test.context.support.DefaultTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+24/02/2016 23:02:13.218 [INFO][org.springframework.test.context.support.DefaultTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b2da18f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5906ebcb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@258e2e41, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3d299e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55a561cf]
+24/02/2016 23:02:13.319 [INFO][org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [application-context.xml]
+24/02/2016 23:02:13.664 [INFO][org.springframework.context.support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@6973bf95: startup date [Wed Feb 24 23:02:13 BRT 2016]; root of context hierarchy
+24/02/2016 23:02:14.036 [DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+24/02/2016 23:02:14.091 [INFO][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'commerceOnePU'
+24/02/2016 23:02:14.113 [INFO][org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: commerceOnePU
+	...]
+24/02/2016 23:02:14.194 [INFO][org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+24/02/2016 23:02:14.196 [INFO][org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+24/02/2016 23:02:14.197 [INFO][org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+24/02/2016 23:02:14.442 [INFO][org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+24/02/2016 23:02:14.927 [INFO][org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+24/02/2016 23:02:15.110 [INFO][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+24/02/2016 23:02:15.165 [INFO][org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 4.3.2.Final
+24/02/2016 23:02:15.590 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+24/02/2016 23:02:15.590 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+24/02/2016 23:02:15.593 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+24/02/2016 23:02:15.613 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.Billing
+24/02/2016 23:02:15.613 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, lastmodifieddate, id, type]
+24/02/2016 23:02:15.614 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.614 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.620 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.CUSTOMERS
+24/02/2016 23:02:15.620 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+24/02/2016 23:02:15.620 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.621 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.626 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.EventLog
+24/02/2016 23:02:15.627 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, lastmodifieddate, name, id]
+24/02/2016 23:02:15.627 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.627 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.633 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.MailBox
+24/02/2016 23:02:15.634 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, lastmodifieddate, name, id]
+24/02/2016 23:02:15.634 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.634 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.643 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.ORDERS
+24/02/2016 23:02:15.643 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, id, customer_id, supplier_id]
+24/02/2016 23:02:15.643 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_order_suppliers]
+24/02/2016 23:02:15.644 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_57wwsm6wqqkcr1amp4dtsk5bs, fk_order_suppliers, primary]
+24/02/2016 23:02:15.648 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.OrderItem
+24/02/2016 23:02:15.648 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [id, order_id]
+24/02/2016 23:02:15.649 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_6cxptya5vldowhtfdxs70ytw1]
+24/02/2016 23:02:15.649 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_6cxptya5vldowhtfdxs70ytw1, primary]
+24/02/2016 23:02:15.654 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.Queue
+24/02/2016 23:02:15.654 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, lastmodifieddate, name, id]
+24/02/2016 23:02:15.654 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.655 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.659 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.SUPPLIERS
+24/02/2016 23:02:15.660 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id]
+24/02/2016 23:02:15.660 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.660 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.665 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.TB_CATALOG
+24/02/2016 23:02:15.665 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, type]
+24/02/2016 23:02:15.665 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.665 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.671 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000261: Table found: commerceone.USERS
+24/02/2016 23:02:15.671 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000037: Columns: [createddate, profile, passoword, name, id, username]
+24/02/2016 23:02:15.671 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+24/02/2016 23:02:15.671 [INFO][org.hibernate.tool.hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+24/02/2016 23:02:15.673 [INFO][org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+24/02/2016 23:02:15.998 [DEBUG][com.commerceone.sales.OrderService] .... Created OrderService and repository is null
+24/02/2016 23:02:16.023 [DEBUG][com.commerceone.sales.OrderService] .... OrderService Initialized and repository is com.commerceone.sales.OrderRepository@6ad1701a
+24/02/2016 23:02:16.203 [INFO][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+24/02/2016 23:02:16.216 [INFO][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+24/02/2016 23:02:16.246 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/publish],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.commerceone.catalog.controller.CatalogController.publish(com.commerceone.catalog.Catalog)
+24/02/2016 23:02:16.246 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/new],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.commerceone.catalog.controller.CatalogController.addForm()
+24/02/2016 23:02:16.246 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.commerceone.catalog.controller.CatalogController.add(com.commerceone.catalog.Catalog)
+24/02/2016 23:02:16.247 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/catalog/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.commerceone.catalog.controller.CatalogController.list()
+24/02/2016 23:02:16.526 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@6973bf95: startup date [Wed Feb 24 23:02:13 BRT 2016]; root of context hierarchy
+24/02/2016 23:02:16.566 [INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@6973bf95: startup date [Wed Feb 24 23:02:13 BRT 2016]; root of context hierarchy
+24/02/2016 23:04:27.596 [INFO][org.springframework.context.support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@6973bf95: startup date [Wed Feb 24 23:02:13 BRT 2016]; root of context hierarchy
+24/02/2016 23:04:27.611 [INFO][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'commerceOnePU'

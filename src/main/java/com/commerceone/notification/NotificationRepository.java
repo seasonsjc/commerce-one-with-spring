@@ -1,5 +1,7 @@
 package com.commerceone.notification;
 
+import org.springframework.stereotype.Repository;
+
 import com.commerceone.shared.repository.BaseRepository;
 
 @Repository

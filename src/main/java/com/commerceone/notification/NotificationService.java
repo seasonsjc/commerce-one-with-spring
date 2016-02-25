@@ -18,10 +18,16 @@ public class NotificationService {
 	@Transactional	
 	public void sendMailToSupplier (Order order) {
 	
-		
+		MailBox mailBox = new MailBox();
+		repository.create(mailBox);
 		
 	}
-	
+
+	@Transactional	
+	public void sendMailToCustomer (Order order) {
+		MailBox mailBox = new MailBox();
+		repository.create(mailBox);
+	}	
 	
 	
 }

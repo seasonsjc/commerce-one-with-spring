@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.commerceone.billing.BillingService;
+import com.commerceone.integrator.IntegratorService;
+import com.commerceone.notification.NotificationRepository;
+import com.commerceone.notification.NotificationService;
 
 @Service
 public class OrderService {
@@ -17,6 +20,13 @@ public class OrderService {
 	
 	@Autowired
 	private BillingService billingService;
+	
+	@Autowired
+	private NotificationService notificationService;
+	
+	@Autowired
+	private IntegratorService integratorService;
+	
 	
 	@Autowired
 	private OrderRepository repository;
@@ -31,10 +41,10 @@ public class OrderService {
 		
 		repository.create(order);
 		billingService.startBillingFor(order);
-		notification.sendMailToSupplier(order);
-		notification.sendMailToCustomer(order);
-		integrator.sendToSupplier(order);
-		integrator.sendToCustomer(order);
+		notificationService.sendMailToSupplier(order);
+		notificationService.sendMailToCustomer(order);
+		integratorService.sendToSupplier(order);
+		integratorService.sendToCustomer(order);
 			
 	}
 	
