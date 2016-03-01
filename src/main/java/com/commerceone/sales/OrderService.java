@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.commerceone.billing.BillingService;
+import com.commerceone.event.EventLog;
+import com.commerceone.event.EventRepository;
 import com.commerceone.integrator.IntegratorService;
 import com.commerceone.notification.NotificationRepository;
 import com.commerceone.notification.NotificationService;
@@ -27,6 +29,8 @@ public class OrderService {
 	@Autowired
 	private IntegratorService integratorService;
 	
+	@Autowired
+	private EventRepository eventRepository;
 	
 	@Autowired
 	private OrderRepository repository;
@@ -39,14 +43,33 @@ public class OrderService {
 	@Transactional
 	public void createSalesOrder (Order order) {
 		
-		repository.create(order);
-		billingService.startBillingFor(order);
-		notificationService.sendMailToSupplier(order);
-		notificationService.sendMailToCustomer(order);
-		integratorService.sendToSupplier(order);
-		integratorService.sendToCustomer(order);
+		EventLog event = new EventLog();
+		event.setName("CreateSalesORder");
+		try {
+			
+			repository.create(order);
+
+			billingService.startBillingFor(order);
+			
+			notificationService.sendMailToSupplier(order);
+			notificationService.sendMailToCustomer(order);
+			
+			integratorService.sendToSupplier(order);
+			integratorService.sendToCustomer(order);
+		
+			event.setStatus("Success");
+			
+		} catch (Exception e) {
+			event.setStatus("Error" + e );
+			throw e;
+		} finally {
+			eventRepository.create(event);
+		}
+		
 			
 	}
+	
+	
 	
 	
 	@PostConstruct

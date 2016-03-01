@@ -16,12 +16,14 @@ import com.commerceone.account.Supplier;
 import javax.persistence.Temporal;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.GenerationType;
 import javax.persistence.Embedded;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 
@@ -43,14 +45,14 @@ public class Order implements Serializable {
 	private Supplier supplier;
 	
 
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne()
 	@JoinColumn(name="CUSTOMER_ID")
 	private Customer customer;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdDate;
 	
-	@OneToMany(mappedBy="order",cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="order",cascade={CascadeType.MERGE, CascadeType.PERSIST}, fetch=FetchType.LAZY)
 	private List<OrderItem> items;
 	
 	public Order() {
@@ -88,6 +90,20 @@ public class Order implements Serializable {
 		this.createdDate = createdDate;
 	}
 
+	public void add(OrderItem item) {
+		
+		if (items == null) items = new ArrayList<OrderItem>();
+		
+		item.setOrder(this);
+		items.add(item);		
+	}
+
+	public void add(String  product) {
+		OrderItem item = new OrderItem(product);
+		add(item);
+	}
+		
+	
 	public List<OrderItem> getItems() {
 		return items;
 	}

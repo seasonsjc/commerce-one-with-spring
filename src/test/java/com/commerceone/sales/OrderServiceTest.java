@@ -1,6 +1,7 @@
 package com.commerceone.sales;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,13 +23,17 @@ public class OrderServiceTest {
 	public void testA () {
 		
 		Order order = new Order();
-		order.setCustomer(new Customer("XPTO"));
+		order.setCustomer(new Customer( 1L));
 
 		order.setSupplier(new Supplier("Supplier XPTO"));
 
 		order.setCreatedDate(new Date());
+		order.add("PRD XYZ");
 		
 		service.createSalesOrder(order);
+		
+		List<OrderItem> items = order.getItems();
+		OrderItem item = items.get(0);
 		
 	}
 	

@@ -25,6 +25,10 @@ public class Customer implements Serializable {
 		this.name = name;
 	}
 
+	public Customer(Long id) {
+		this.id = id;
+	}
+
 
 
 	//private Address shipping;
