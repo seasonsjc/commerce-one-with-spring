@@ -32,7 +32,18 @@
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	<mvc:resources mapping="/**" location="/" />
 
-	<mvc:annotation-driven />	
+	<mvc:annotation-driven >
+		<mvc:message-converters>
+			<!-- Use the HibernateAware mapper instead of the default -->
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="objectMapper">
+                    <bean class="br.com.abril.sharing.json.HibernateAwareObjectMapper" />
+                </property>
+            </bean>
+			
+		</mvc:message-converters>
+	
+	</mvc:annotation-driven>	
 	
 	<bean name="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
 		<property name="initialSize" value="15" />
