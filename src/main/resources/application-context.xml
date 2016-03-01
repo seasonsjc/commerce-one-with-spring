@@ -37,7 +37,7 @@
 			<!-- Use the HibernateAware mapper instead of the default -->
             <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
                 <property name="objectMapper">
-                    <bean class="br.com.abril.sharing.json.HibernateAwareObjectMapper" />
+                    <bean class="com.commerceone.shared.json.HibernateAwareObjectMapper" />
                 </property>
             </bean>
 			

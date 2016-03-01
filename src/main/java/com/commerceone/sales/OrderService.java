@@ -47,7 +47,7 @@ public class OrderService {
 		event.setName("CreateSalesORder");
 		try {
 			
-			repository.create(order);
+			repository.save(order);
 
 			billingService.startBillingFor(order);
 			
@@ -75,6 +75,10 @@ public class OrderService {
 	@PostConstruct
 	public void init() {
 		logger.debug( ".... OrderService Initialized and repository is " +  repository );		
+	}
+	
+	public OrderRepository getAll() {
+		return repository;
 	}
 	
 }
