@@ -3,6 +3,10 @@ package com.commerceone.sales;
 
 
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Entity;
 
@@ -20,6 +24,7 @@ public class OrderItem implements Serializable {
 	
 	private String product; 
 	
+	@JsonIgnore
 	@ManyToOne 
 	private Order order;
 

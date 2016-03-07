@@ -6,12 +6,14 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import java.util.List;
+import java.util.Locale;
 
 import javax.persistence.TemporalType;
 
 import com.commerceone.account.Customer;
 
 import com.commerceone.account.Supplier;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.Temporal;
 
@@ -49,10 +51,11 @@ public class Order implements Serializable {
 	@JoinColumn(name="CUSTOMER_ID")
 	private Customer customer;
 	
+	@JsonFormat(pattern="dd/MM/yyyy HH:mm:SSZ",  timezone="America/Sao_Paulo")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdDate;
 	
-	@OneToMany(mappedBy="order",cascade={CascadeType.MERGE, CascadeType.PERSIST}, fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="order",cascade={CascadeType.MERGE, CascadeType.PERSIST}, fetch=FetchType.EAGER)
 	private List<OrderItem> items;
 	
 	public Order() {

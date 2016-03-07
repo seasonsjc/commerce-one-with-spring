@@ -4,7 +4,6 @@ import javax.annotation.PostConstruct;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,7 +11,6 @@ import com.commerceone.billing.BillingService;
 import com.commerceone.event.EventLog;
 import com.commerceone.event.EventRepository;
 import com.commerceone.integrator.IntegratorService;
-import com.commerceone.notification.NotificationRepository;
 import com.commerceone.notification.NotificationService;
 
 @Service
