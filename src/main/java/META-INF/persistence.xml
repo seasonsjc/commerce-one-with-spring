@@ -18,19 +18,6 @@
 		<class>com.commerceone.account.Address</class>
 		<class>com.commerceone.identity.Login</class>
 		
-		<properties>
-			<property name="javax.persistence.jdbc.driver" 
-					value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" 
-					value="jdbc:mysql://localhost:3306/commerceone"/>
-			<property name="javax.persistence.jdbc.user"
-					 value="app"/>
-			<property name="javax.persistence.jdbc.password" 
-					value="app"/>
-					
-			<property name="hibernate.hbm2ddl.auto" value="update"/>
-			
-		</properties>
 	
 	
 	</persistence-unit>

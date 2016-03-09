@@ -23,13 +23,11 @@
 
 	<context:annotation-config />
 	
-	
 	<context:component-scan 
 			base-package="com.commerceone"/>
 	
 	<aop:aspectj-autoproxy proxy-target-class="false" />
 		
-	<mvc:resources mapping="/resources/**" location="/resources/" />
 	<mvc:resources mapping="/**" location="/" />
 
 	<mvc:annotation-driven >
@@ -56,6 +54,7 @@
 	
 	<bean name="entityManagerFactory" 
 				class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		
 		<property name="persistenceXmlLocation" value="classpath*:META-INF/persistence.xml" />
 		<property name="dataSource" ref="dataSource" />
 		<property name="persistenceUnitName" value="commerceOnePU" />

@@ -15,9 +15,9 @@ app.config(['$routeProvider',
       }).  
       when('/orders/', {
     	  templateUrl: 'partials/orders/list.html',
-    	  controller: 'SearchOrdersCtrl'
+    	  controller: 'OrdersCtrl'
       }).  
       otherwise({
-        redirectTo: '/'
+        redirectTo: '/catalog/search/'
       });
   }]);

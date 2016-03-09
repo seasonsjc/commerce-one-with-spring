@@ -55,7 +55,9 @@ public class Order implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdDate;
 	
-	@OneToMany(mappedBy="order",cascade={CascadeType.MERGE, CascadeType.PERSIST}, fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="order"
+			,cascade={CascadeType.MERGE, CascadeType.PERSIST}
+			, fetch=FetchType.EAGER	)
 	private List<OrderItem> items;
 	
 	public Order() {

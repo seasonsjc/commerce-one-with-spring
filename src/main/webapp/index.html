@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html data-ng-app="dataloaderApp">
+<html data-ng-app="app">
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="lib/bootstrap-3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="lib/bootstrap-3.1.1/css/lato-fonts.css">
-<link rel="stylesheet" href="lib/jquery-ui/css/custom-theme/jquery-ui-1.10.0.custom.css" />
-<link rel="stylesheet" href="lib/jquery-ui/css/custom-theme/bootstrap-timepicker.css" />
-<link rel="stylesheet" href="lib/bootstrap-3.1.1/css/font-awesome.min.css" />
+<link rel="stylesheet"
+	href="lib/jquery-ui/css/custom-theme/jquery-ui-1.10.0.custom.css" />
+<link rel="stylesheet"
+	href="lib/jquery-ui/css/custom-theme/bootstrap-timepicker.css" />
+<link rel="stylesheet"
+	href="lib/bootstrap-3.1.1/css/font-awesome.min.css" />
 
 <script src="lib/jquery-1.10.2.min.js"></script>
 <script src="lib/array-prototype.js"></script>
@@ -61,42 +64,51 @@
 
 	<div>
 
-		<div class="container body-content">
-
-			<div class="navbar navbar-inverse">
-				<div class="navbar-header ">
-					<button type="button" class="navbar-toggle collapsed"
-						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-						aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Commerce One</a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#/management/users/">Profile</a></li>
-						<li><a href="#"></a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#/management/app/settings"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sales Force Login</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				
-				<!--/.nav-collapse -->
+		<div class="navbar navbar-inverse ">
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Commerce One</a>
 			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#/management/users/">Profile</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						id="dropdownMenu" data-toggle="dropdown" role="button"
+						aria-expanded="false"><span class="glyphicon glyphicon-cog"
+							aria-hidden="true"></span> <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu"
+							aria-labelledby="dropdownMenu">
+							<li role="presentation"><a role="menuitem" tabindex="-1"
+								href="#"><span class="glyphicon glyphicon-user"
+									aria-hidden="true"></span> ...</a></li>
+						</ul></li>
+				</ul>
+			</div>
+
+			<!--/.nav-collapse -->
+		</div>
+
+		<div class="container body-content">
+			<div id="rootApp" ng-view></div>
+		
 		</div>
 
 	</div>
-	<div id="rootApp" ng-view></div>
-	</div>
 
+
+	<script src="js/catalog/catalog-service.js"></script>
+	<script src="js/catalog/search-controller.js"></script>
+	<script src="js/orders/order-service.js"></script>
+	<script src="js/orders/order-controller.js"></script>
 
 </body>
 </html>
