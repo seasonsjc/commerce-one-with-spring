@@ -1,9 +1,12 @@
 package com.commerceone.sales;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import static org.springframework.data.jpa.domain.Specifications.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -78,5 +81,17 @@ public class OrderService {
 	public OrderRepository getAll() {
 		return repository;
 	}
+	
+	public List<Order> search (OrderCriteria criteria) {
+		
+		OrderSpecifications specs = new OrderSpecifications(criteria);
+		
+		return repository.findAll(  where(  specs.withOrderNumber())
+								.and(specs.withStartDate())
+								.and(specs.withEndDate())
+									 );
+		
+	}
+	
 	
 }
