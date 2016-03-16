@@ -83,8 +83,8 @@
 			transaction-manager="transactionManager" 
 			proxy-target-class="true"/>
 	
-	<jpa:repositories base-package="com.commerceone" 
-				
-				/>
+	<jpa:repositories base-package="com.commerceone" />
+	
+	<import resource="classpath:application-security.xml"/>
 
 </beans>

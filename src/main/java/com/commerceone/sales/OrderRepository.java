@@ -15,7 +15,7 @@ public interface OrderRepository extends JpaRepository<Order, Long>
 									 , 	JpaSpecificationExecutor<Order> {
 
 	
-	@Query("select new Order( id , createdDate ) from order o where id = :id")
+	//@Query("select new Order( id , createdDate ) from Order o where id = :id")
 	List<Order> findById (Long id);
 	
 }

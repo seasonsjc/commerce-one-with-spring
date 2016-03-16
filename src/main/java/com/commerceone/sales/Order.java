@@ -63,6 +63,13 @@ public class Order implements Serializable {
 	public Order() {
 	}
 
+	public Order(Long id, Date createdDate) {
+		this.id = id;
+		this.createdDate = createdDate;
+	}
+
+
+
 	public Long getId() {
 		return id;
 	}
